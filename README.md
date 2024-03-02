@@ -13,7 +13,7 @@ def someFunction(x, y, z=20):
 ```
 
 ## `pass` 
-In case the function argument is not given. This is to prevent
+Use `pass` in case the function body is not defined to prevent error
 ```python
 def someFunction(x, y, z):
   pass
