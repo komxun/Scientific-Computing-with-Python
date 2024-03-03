@@ -211,3 +211,6 @@ spam(y=7, x=1) # 8
 Notes
 - As long as all the arguments in a function call are keyword arguments **(exact spelling)**, the order of the arguments doesn't matter.
 
+
+# Password Generator
+https://github.com/komxun/Scientific-Computing-with-Python/blob/59cfda5c42a79c903c0bb10cc184f171cfddf58c/password_generator.py#L1-L40
