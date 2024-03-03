@@ -163,7 +163,8 @@ constraints = [
 # Extra tips
 Instead of using a loop and a counter variable, you can achieve the same result with a different approach.
 
-``` original
+``` python
+# Original
 While True:
   count = 0
   for constraint, pattern in constraints:
@@ -173,3 +174,40 @@ While True:
   if count == 4:
      break
 ```
+
+``` python
+# More efficient
+While True:
+    if all(
+            [
+                constraint <= len(re.findall(pattern, password))
+                for constraint, pattern in constraints
+            ]
+        ): break
+```
+
+Having `all([expression for i in iterable])`, means that a new list is created by evaluating expression for each `i` in `iterable`. After the `all()` function iterates over the newly created list, the list is deleted automatically, since it is no longer needed.
+
+Memory can be saved by using a generator expression. Generator expressions follow the syntax of list comprehensions but they use parentheses instead of square brackets.
+
+Change your list comprehension into a generator expression by removing the square brackets.
+
+``` python
+While True:
+   if all(
+            constraint <= len(re.findall(pattern, password))
+            for constraint, pattern in constraints
+        ): break
+```
+
+You can call a function using keyword arguments, that is writing the parameter name explicitly followed by the assignment operator and the value. For example:
+```python
+def add(x, y):
+    return x + y
+
+spam(x=1, y=7) # 8
+spam(y=7, x=1) # 8
+```
+Notes
+- As long as all the arguments in a function call are keyword arguments **(exact spelling)**, the order of the arguments doesn't matter.
+
