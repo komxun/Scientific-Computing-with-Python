@@ -3,36 +3,15 @@ Link: https://www.freecodecamp.org/learn/scientific-computing-with-python/
 
  > Summary from freeCodeCamp.org
 
-# Day 1: Learn String Manipulation by Building a Cipher (Encryption/ Decryption) 
+# Day 7: Learn Recursion by Solving the Tower of Hanoi Puzzle
+Recursion is a programming approach that allows you to solve complicated computational problems with just a little code.
+![image](https://github.com/komxun/Scientific-Computing-with-Python/assets/133139057/745b70c1-212c-4d1c-9813-e81ae28de45c)
+
+The puzzle consists of three rods and a number of disks of different diameters.
+
+The goal of this puzzle is moving the disks from the first rod to the third rod, following specific rules that restrict placing a larger disk on top of a smaller one.
+
+The Tower of Hanoi puzzle can be solved in 2^n - 1 moves, where n is the number of disks
 # What's new to me
 
-## Set the default value of function
-```python
-def someFunction(x, y, z=20):
-  #<code>
-```
 
-## `pass` 
-Use `pass` in case the function body is not defined to prevent error
-```python
-def someFunction(x, y, z):
-  pass
-```
-## Finding the index
-- `.find()` method gives the index of the argument. It throws `-1` if it couldn't find the match
-- `.index()` method is identical to the `.find()` method, but it throws a `ValueError` exception if it is unable to find
-
-
-## `.isalpha`
-The `.isalpha()` method returns `True` if all the character of the string on which it is called are letters. For example, the code below returns `True`:
-``` python
-'freeCodeCamp`.isalpha()
-# True
-```
-
-## 2 Ways of concatenating string
-``` python
-text = 'Hello'
-print('Message: ' + 'text')
-print(f'Message: {text}')
-```
