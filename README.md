@@ -23,3 +23,10 @@ the largest disk from the source to the target
 and then the `n - 1` disks from the auxiliary rod to the target.
 So, the first thing the move function should do is calling itself with `n - 1` as the first argument. But if you try to do so without defining a base case, you will get a `RecursionError`. This happens because the function keeps calling itself indefinitely.
 
+
+# Iterative Approach
+https://github.com/komxun/Scientific-Computing-with-Python/blob/cf257dd213fc43376853f8e2b598a0e22a19866c/Tower_of_Hanoi_Iterative.py#L1-L49
+
+# Recursive Approach
+- more flexible, doesn't have to deal with even/odd case
+https://github.com/komxun/Scientific-Computing-with-Python/blob/cf257dd213fc43376853f8e2b598a0e22a19866c/Tower_of_Hanoi_Recursive.py#L1-L23
