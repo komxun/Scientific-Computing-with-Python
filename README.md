@@ -59,7 +59,28 @@ So, the main difference is that `.append()` adds its argument as a single elemen
 - If you want to add a list as an individual element, use `.append()`
 - If you want to merge a list with another list, use `.extend()`
 
-  
+  # `try`
+- The `try` block lets you test a block of code for errors.
+- The `except` block lets you handle the error.
+- The `else` block lets you execute code when there is no error.
+- The `finally` block lets you execute code, regardless of the result of the try- and except blocks.
 
+```python
+try:
+    col = contents.index(0)
+    return row, col
+except ValueError:
+    pass
+```
+- If `0` is found, the code immediately returns a tuple (row, col) with the row index and column index of the empty cell.
+- `except` block handle the ValueError exception that is thrown if `0` is not found
+- If the value `0` is not present in the current row, an exception would be thrown and the `except` block would execute.
+
+# `:=` walrus operator
+- walrus operator (`:=`) formally known as the **assignment expression operator**, offers a way to assign to variables within an expression, including variables that do not exist yet. 
+- the walrus operator allows us to both assign a value to a variable, and to return that value, all in the same expression.
+
+# Result
+![image](https://github.com/komxun/Scientific-Computing-with-Python/assets/133139057/0a90cef7-9d73-4d86-8a0d-f4b7b4ee8e8a)
 
 
